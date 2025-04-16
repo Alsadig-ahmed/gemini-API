@@ -1,4 +1,4 @@
-# Gemini API and Facebook Graph API Examples
+# Gemini API Examples
 
 This project demonstrates the use of the Google Gemini API for image analysis and audio transcription.
 
