@@ -6,7 +6,7 @@ import os
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-with open('img/audio.opus', 'rb') as f:
+with open('assets/audio.opus', 'rb') as f:
     audio_bytes = f.read()
 
 

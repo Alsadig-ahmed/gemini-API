@@ -11,10 +11,10 @@ def image_to_base64(image_path):
         encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
     return encoded_string
 
-# image_base64 = image_to_base64("img/a-cat.jpg")
+# image_base64 = image_to_base64("assets/a-cat.jpg")
 # prompt = "What is this image?"
 
-image_base64 = image_to_base64("img/bankak.jpg")
+image_base64 = image_to_base64("assets/bankak.jpg")
 prompt = "convert the image data to a json format"
 
 
