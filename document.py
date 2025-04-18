@@ -10,7 +10,8 @@ file_path = pathlib.Path('assets/pdf') / 'Founder-Mode.pdf'
 file_path.read_bytes()
 
 # Upload the PDF using the File API
-sample_file = client.files.upload(file=file_path)
+sample_doc = client.files.upload(file=file_path)
+# sample_doc = ile = client.files.get(name="files/i9q7pkzdc6e7")
 
 prompt="Summarize this document"
 
