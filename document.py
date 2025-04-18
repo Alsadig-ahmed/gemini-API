@@ -11,13 +11,13 @@ file_path.read_bytes()
 
 # Upload the PDF using the File API
 sample_doc = client.files.upload(file=file_path)
-# sample_doc = ile = client.files.get(name="files/i9q7pkzdc6e7")
+# sample_doc = client.files.get(name="files/i9q7pkzdc6e7")
 
 prompt="Summarize this document"
 
 response = client.models.generate_content(
   model="gemini-2.0-flash",
-  contents=[sample_file, prompt])
+  contents=[sample_doc, prompt])
   
 res = response.text  
 print(res)
